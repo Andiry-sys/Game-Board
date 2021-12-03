@@ -1,0 +1,129 @@
+body{
+			background : rgba(180, 179, 180, 0.3);
+			font-family: 'Montserrat', sans-serif;
+		}
+		.container{
+			width:700px;
+			margin: 10px auto auto;
+			overflow: hidden;
+		}
+		#game_board{
+			width:100%;
+			background:#47A4C9;
+			padding:20px;
+			border-spacing:0px;
+			box-shadow: 0px 0px 6px rgba(0,0,0,0.5);
+			border-radius: 4px;
+			border-collapse: separate;
+		}
+		.tiles{
+			background:#fafafa;
+			box-shadow:0px 0px 1px rgba(0,0,0,0.5);
+			border-radius: 2px;
+			cursor:pointer;
+		}
+
+		.tiles:focus, .tiles:hover {
+			background:#e1e1e1;
+
+		}
+
+		.walls_h{
+
+			height:25px;
+			background:#969696;
+			cursor:pointer;
+
+		}
+
+		
+
+		.invisible{
+			background:none;
+			box-shadow:none;
+			border:none;
+		}
+		.pempty{
+			background: none ;
+		}
+
+		
+
+		.glow{
+			background:  rgba(192,255,244, 0.5) !important; 
+		}
+		.walls_container{
+			margin: auto;
+			margin-top: 30px ;
+			margin-bottom: 10px;
+			width: 700px;
+		}
+		.walls_container > span {
+			font-size: 20px;
+		}
+		.walls_container > #p1_walls {
+			color: #008000;
+		}
+		.walls_container > #p2_walls {
+			color: #FF0000;
+			float: right;
+		}
+
+		#infos{
+			width: 800px;
+		    padding: 10px;
+		    position: relative;
+		    margin: auto;
+		    margin-top: -10px;
+		    background : rgba(180, 179, 180, 0.3);
+		    border-radius: 3px;
+		    box-shadow: 0px 1px 5px rgba(0,0,0,0.5);
+		    text-align: center;
+		}
+		#infos  h2 {
+			color: #3f93b4;
+			margin: 5px;	
+			display: inline-block;
+		}
+		#infos  a,#infos  a:visited {
+			color: #3f93b4;
+			text-decoration: none;
+			font-size: 18px;
+			margin-top: 10px;
+		}
+		#playagain{
+			margin: 30px auto auto;
+			display: block;
+			margin-top: 30px;
+			width: 250px;
+			font-size: 26px;
+			background: #3f93b4;
+			color: #fff;
+		}
+		.loading-div{
+			width: 700px;
+			height: 660px;
+			z-index: 999;
+			position: absolute;
+			background: rgba(63, 147, 180, 0.8) none repeat scroll 0% 0%;
+			border-radius: 10px;
+			text-align: center;
+		}
+		
+
+		footer{
+			position: relative;
+			left: 0px;
+			bottom: 10px;
+			width: 100%;
+			text-align: center;
+			margin-top: 30px;
+		}
+		@media screen and (max-device-width: 850px)  { 
+  			#game_board{
+  				width: 90%;
+  			} 
+  			.walls_container{
+  				width: 90%;
+  			} 
+		}
